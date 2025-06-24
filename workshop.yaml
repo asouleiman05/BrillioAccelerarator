@@ -1,0 +1,23 @@
+id: aws-payment-gateway
+title: AWS Payment Gateway Accelerator
+description: Learn to deploy and integrate a React-based CBPR+ payment app with AWS Amplify and Aplon Hub.
+duration: 30
+level: 200
+authors:
+  - name: Brillio
+    email: smita.singh@brillio.com
+categories:
+  - payments
+  - react
+  - aws-amplify
+  - cbpr
+  - finance
+tags:
+  - react
+  - amplify
+  - s3
+  - cbpr+
+  - payment
+  - aplonhub
+language: en
+primary_file: content/index.en.md

@@ -1,0 +1,82 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Create CodeCommit repo from S3, deploy to AWS Amplify, and inject an environment variable.
+
+Parameters:
+  AppName:
+    Type: String
+    Description: Name for the Amplify App and CodeCommit Repo
+
+  S3Bucket:
+    Type: String
+    Description: The S3 bucket containing the ZIP archive
+
+  S3Key:
+    Type: String
+    Description: The ZIP file key in the S3 bucket (e.g., my-app.zip)
+
+  RepoBranch:
+    Type: String
+    Default: main
+    Description: Name of the branch in CodeCommit
+
+  APIBaseURL:
+    Type: String
+    Default: https://aplonhub-brillio.pc14.eu
+    Description: Value of the environment variable (REACT_APP_API_BASE_URL)
+
+Resources:
+  AppRepository:
+    Type: AWS::CodeCommit::Repository
+    Properties:
+      RepositoryName: !Ref AppName
+      Code:
+        S3:
+          Bucket: !Ref S3Bucket
+          Key: !Ref S3Key
+        BranchName: !Ref RepoBranch
+
+  AmplifyApp:
+    Type: AWS::Amplify::App
+    DependsOn: AppRepository
+    Properties:
+      Name: !Ref AppName
+      Repository: !Sub https://git-codecommit.${AWS::Region}.amazonaws.com/v1/repos/${AppName}
+      Platform: WEB
+      BuildSpec: |
+        version: 1
+        frontend:
+          phases:
+            preBuild:
+              commands:
+                - npm ci
+            build:
+              commands:
+                - echo "Building with MY_ENV_VAR=$MY_ENV_VAR"
+                - npm run build
+          artifacts:
+            baseDirectory: build
+            files:
+              - '**/*'
+          cache:
+            paths:
+              - node_modules/**/*
+      EnvironmentVariables:
+        - Name: REACT_APP_API_BASE_URL
+          Value: !Ref APIBaseURL
+
+  AmplifyBranch:
+    Type: AWS::Amplify::Branch
+    Properties:
+      AppId: !GetAtt AmplifyApp.AppId
+      BranchName: !Ref RepoBranch
+      EnableAutoBuild: true
+
+Outputs:
+  AmplifyAppId:
+    Description: The ID of the Amplify App
+    Value: !GetAtt AmplifyApp.AppId
+
+  AmplifyBranchName:
+    Description: The name of the Amplify branch deployed
+    Value: !Ref AmplifyBranch
