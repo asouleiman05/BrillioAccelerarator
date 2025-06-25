@@ -30,4 +30,4 @@ weight = 0
 +++
 ```
 
-The title will be the title on navigation panel on the left. The weight determines the order the page appears in the navigation panel.# BrillioAccelerarator
+The title will be the title on navigation panel on the left. The weight determines the order the page appears in the navigation panel.

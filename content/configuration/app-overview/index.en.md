@@ -33,7 +33,7 @@ This is the core feature of the app. It allows users to initiate a credit transf
 
 On clicking **Send**:
 
-- A `PUT` request is sent to the CBPR+ Credit Transfer API
+- A `PUT` request is sent to the CBPR+ Credit Transfer API [API Details](/assets/credittransfer-api.md)
 - A transaction ID and UETR are generated in the frontend
 - On successful response, the user is navigated to the success screen
 
