@@ -16,7 +16,4 @@ These assets support deployment and configuration steps, including the React sou
 - **[source-code.zip](../assets/source-code.zip)**  
   Full React source code (excluding `node_modules`). Use this with CloudFormation or manual deployment.
 
-- **[cloudformation-template.yaml](../assets/cloudformation-template.yaml)**  
-  CloudFormation template to automatically set up AWS CodeCommit and deploy to AWS Amplify with environment variables.
-
 ---

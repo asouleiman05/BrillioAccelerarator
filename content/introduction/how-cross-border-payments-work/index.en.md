@@ -14,7 +14,6 @@ Whether it’s a corporate sending funds to a global supplier or an individual r
 - **Payment initiation** from the sender's institution
 - **Message transformation and validation** (e.g., SWIFT to ISO 20022)
 - **Routing through intermediary banks or a correspondent network**
-- **Currency conversion**, if required
 - **Compliance checks** at each hand-off
 - **Funds delivery** to the recipient's bank account
 

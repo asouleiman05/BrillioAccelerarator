@@ -7,7 +7,7 @@ localeCodes:
 params:
   workshop_title: AWS Payment Gateway Accelerator Workshop
   author: Brillio
-  app_name: AWS Payment Accelerator React App
+  app_name: AWS Payment Accelerator App
   repo_url: https://github.com/brillio-PES/aws-payment-gateway
   amplify_console_url: https://console.aws.amazon.com/amplify/home
   aplon_hub_url: https://aplonhub-brillio.pc14.eu/

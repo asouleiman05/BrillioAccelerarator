@@ -28,8 +28,8 @@ This is the core feature of the app. It allows users to initiate a credit transf
 
 - **Amount (EUR)**
 - **Payment description**
-- **Debtor name and IBAN**
-- **Creditor name and IBAN**
+- **Sender's name and IBAN- GR1601101250000000012400695**
+- **Recipient's name and IBAN- GR1601101250000000012300695**
 
 On clicking **Send**:
 
