@@ -1,0 +1,14 @@
+For Windows
+You can download Preview App here - https://artifacts.us-east-1.prod.workshops.aws/v2/cli/windows/preview_build.exe 
+Open Terminal and change to the location of the preview_build app with cd YourDirectory
+Launch the preview application from your CLI by providing the relative or absolute path, such as running ~\Downloads\preview_build.exe
+If you're presented with a message that Windows protected your PC:
+Choose More info
+Select Run anyway to continue
+
+https://catalog.us-east-1.prod.workshops.aws/workshops/595ee110-a12e-4645-b629-cbf6b6dd6dd0/en-US/summary
+
+
+https://market.brillio.com/Brillio-payments-demo.html#form-section
+
+paymentsolutions@brillio.com
