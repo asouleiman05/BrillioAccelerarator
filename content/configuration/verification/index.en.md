@@ -10,7 +10,7 @@ After deploying and testing your payment app, it's important to verify that tran
 ## Step 1: Log into Aplon Hub
 
 - Open [Aplon Hub Dashboard](https://aplonhub-brillio.pc14.eu).
-- Use your credentials provided during onboarding to sign in.
+- Use your credentials provided during onboarding to sign in *(Credentials will be provided by AWS or Brillio team during the workshop).*
 
 ## Step 2: Navigate to Outgoing Transaction Monitoring
 
