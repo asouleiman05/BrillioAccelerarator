@@ -1,23 +1,24 @@
-id: aws-payment-gateway
-title: AWS Payment Gateway Accelerator
-description: Learn to deploy and integrate a React-based CBPR+ payment app with AWS Amplify and Aplon Hub.
+id: brillio-payment-Solution
+title: Brillio Payment Solution
+description: Brillio, in partnership with Payment Components, delivers a cloud-native payment modernization hub powered by aplonHUB. This robust solution enables financial institutions to standardize and modernize their payment infrastructure efficiently, across multiple schemes and instruments.
 duration: 30
 level: 200
 authors:
   - name: Brillio
-    email: smita.singh@brillio.com
+    email: paymentsolutions@brillio.com
 categories:
   - payments
-  - react
-  - aws-amplify
-  - cbpr
-  - finance
-tags:
-  - react
-  - amplify
-  - s3
+  - Payment Hub
+  - ISO20022
   - cbpr+
-  - payment
-  - aplonhub
+  - FedNow
+  - Realtime Payment
+tags:
+   - payments
+  - Payment Hub
+  - ISO20022
+  - cbpr+
+  - FedNow
+  - Realtime Payment
 language: en
 primary_file: content/index.en.md
